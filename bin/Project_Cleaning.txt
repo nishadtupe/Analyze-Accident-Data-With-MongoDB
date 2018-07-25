@@ -1,0 +1,54 @@
+mongoimport -d France_Accidents -c Accidents --type csv --file  France_Accidents_2012_2016.csv --headerline
+
+Mapping = {
+    'Num_Acc':'AccidentID',
+    'jour':'Day',
+    'mois':'Month',
+    'an':'Year',
+    'hrmn':'Hour',
+    'lum':'LightingCondition',
+    'dep':'Department',
+    'com':'Municipality',
+    'agg':'Localisation',
+    'int':'Intersection',
+    'atm':'AtmosphericCondition',
+    'col':'CollisionType',
+    'adr':'Address',
+    'gps':'GpsCoding',
+    'lat':'Latitude',
+    'long':'Longitude',
+    'catr':'RoadCategory',
+    'voie':'RoadNumber',
+    'v1':'RouteNumber',
+    'v2':'RouteName',
+    'circ':'TrafficType',
+    'nbv':'NumberofLanes',
+    'vosp':'OuterLane',
+    'Prof':'RoadProfile',
+    'pr':'HomePRNumber',
+    'pr1':'PRDistance',
+    'plan':'LaneStructure',
+    'lartpc':'CentralLaneWidth',
+    'larrout':'OuterLaneWidth',
+    'surf':'SurfaceCondition',
+    'infra':'Infrastructure',
+    'situ':'SituationofAccident',
+    'env1':'SchoolPoint',
+    'Acc_number':'AccidentID',
+    'Num_Veh':'NumberOfVehicles',
+    'place':'Place',
+    'catu':'UserCatagory',
+    'grav':'Severity ',
+    'Year_on':'UserYoB',
+    'locp':'Locationofpedestrian',
+    'actp':'Actionofpedestrian',
+    'etatp':'PedestrianGroup',
+    'sexe' : 'Gender',
+    'secu':'SafetyEquipment'
+}
+
+characteristics.rename(index=str, columns=Mapping, inplace=True)
+holiday.rename(index=str, columns=Mapping, inplace=True)
+places.rename(index=str, columns=Mapping, inplace=True)
+users.rename(index=str, columns=Mapping, inplace=True)
+vehicles.rename(index=str, columns=Mapping, inplace=True)
