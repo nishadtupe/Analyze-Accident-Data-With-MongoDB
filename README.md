@@ -1,4 +1,4 @@
-# SQL-NOSQL---Project--Summer-2018
+# SQL/NOSQL-Project-SU-2018
 The repository containts the project documents for SQL/NOSQL project performed By Indiana Bloomington University Students.
 ## SQLNOSQL-Project-SU-2018 - "Analyzing France Accidents Data Using  MongoDB"
 ### Izolda Fetko , Nishad Tupe , Rashmi Ray - University of Indiana , Bloomington 
