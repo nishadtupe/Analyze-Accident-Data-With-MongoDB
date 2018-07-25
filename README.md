@@ -10,12 +10,14 @@ The repository containts the project documents for SQL/NOSQL project performed B
 2. Tableau workbook of Final results.
 
 #### Datasets description :
-Raw Data files downloaded from Kaggle.com
+#####Raw Data files can be downloaded from Kaggle.com
+Path - https://www.kaggle.com/ahmedlahlou/accidents-in-france-from-2005-to-2016
 1.characteristics.csv
 2.places.csv
 3.users.csv
 4.vehicles.csv
-Cleaned data CSV for data analysis used in Project.
+
+#####Cleaned data CSV for data analysis used in Project.
 5.France_Accidents_2013_2016
 
 #### Images description :
